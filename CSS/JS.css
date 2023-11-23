@@ -1,0 +1,44 @@
+#menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Inicialmente fora da tela à direita */
+    width: 250px;
+    height: 100%;
+    background-color: #230a04;
+    transition: right 0.3s ease; /* Alterado para usar 'right' em vez de 'left' */
+    z-index: 1; /* Garante que o menu esteja na parte superior da página */
+  }
+
+  #Agendar_pedido{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: linear-gradient(90deg, transparent, #FF0072); /* Degradê da esquerda para a direita */
+    background-size: 0% 100%; /* Inicialmente sem preenchimento de fundo à esquerda */
+    background-position: 0% 100%; /* Inicialmente a partir da esquerda */
+    transition: background 0.3s ease; /* Transição suave para a cor de fundo */
+  }
+  
+  #Agendar_pedido:hover{
+    background-color: #da3458;
+    background-size: 100% 100%;
+  }
+
+  
+  #menu-lateral ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #menu-lateral ul li {
+    margin: 10px;
+  }
+  
+  #menu-lateral a {
+    color: #fff; /* Cor do texto no menu */
+    text-decoration: none;
+    font-size: 18px;
+  }
